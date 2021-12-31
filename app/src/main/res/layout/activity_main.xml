@@ -11,13 +11,47 @@
     android:background="@color/md_light_blue_500"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:layout_marginTop="70dp"
+            android:foregroundGravity="center_vertical"
+            android:visibility="visible"
+
+            app:srcCompat="@drawable/icon_fly"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
     <TextView
+
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:fontFamily="@font/baloo"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textSize="40sp"
+        android:text="WELCOME"
         android:textColor="@color/md_white_1000"
-        android:text="WELCOME" />
+        android:textSize="50sp" />
+
+    <TextView
+
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/baloo"
+        android:layout_centerHorizontal="true"
+        android:text="MADE BY NHOM 2"
+        android:textColor="@color/md_white_1000"
+        android:textSize="15dp" />
+
+
 </RelativeLayout>

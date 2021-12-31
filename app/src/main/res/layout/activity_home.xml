@@ -19,6 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:fontFamily="@font/baloo"
         android:onClick="GoToLogin"
         tools:ignore="ExtraText" />
     <Button
@@ -26,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:onClick="GoToRegister"
+        android:fontFamily="@font/baloo"
         tools:ignore="ExtraText" />
 
     <Button
