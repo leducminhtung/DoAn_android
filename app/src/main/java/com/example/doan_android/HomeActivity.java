@@ -28,4 +28,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(HomeActivity.this,RegisterUser.class);
         startActivity(intent);
     }
+
+    public void GoToHomeidex(View view) {
+        Intent intent = new Intent(HomeActivity.this,index.class);
+        startActivity(intent);
+    }
 }
