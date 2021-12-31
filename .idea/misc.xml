@@ -3,26 +3,40 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.2" />
-        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.1253415300546448" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_register_user.xml" value="0.4" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_register_user.xml" value="0.315018315018315" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_splash_srceen.xml" value="0.13046448087431695" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_splashsrceen.xml" value="0.13046448087431695" />
         <entry key="..\:/DoAn_android/app/src/main/res/drawable/rounded_corner.xml" value="0.25625" />
         <entry key="..\:/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/DoAn_android/app/src/main/res/layout/activity_main.xml" value="0.19746376811594202" />
         <entry key="..\:/DoAn_android/app/src/main/res/layout/activity_register_user.xml" value="0.264" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16085526315789472" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/header_background.xml" value="0.2546875" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_person.xml" value="0.16085526315789472" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2546875" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_settings_applications_24.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16085526315789472" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/rounded_corner.xml" value="0.16085526315789472" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/search_icon_background.xml" value="0.2546875" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/trending_background.xml" value="0.2546875" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/white_rectangle_background.xml" value="0.2546875" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_change_password.xml" value="0.1506578947368421" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_home2.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_index.xml" value="0.264" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_main.xml" value="0.11956521739130435" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_profile_user.xml" value="0.176" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_register_user.xml" value="0.264" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/menu/navigation.xml" value="0.23854166666666668" />
       </map>
     </option>
