@@ -28,4 +28,6 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(HomeActivity.this,RegisterUser.class);
         startActivity(intent);
     }
+
+
 }

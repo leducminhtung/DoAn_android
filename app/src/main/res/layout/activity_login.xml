@@ -20,8 +20,8 @@
             android:layout_marginBottom="15dp"
             android:textSize="26dp"
             android:textColor="@color/white"
-            android:fontFamily="sans-serif-black"
-            android:text="Welcome back!"/>
+            android:fontFamily="@font/baloo"
+            android:text="LOGIN"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="90dp"
@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="User Name"
+
             app:boxStrokeWidthFocused="2dp"
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/white"
@@ -87,6 +88,7 @@
                 android:layout_centerVertical="true"
                 android:buttonTint="@color/white"
                 android:text="Remember me"
+                android:fontFamily="@font/baloo"
                 android:textColor="@color/white" />
 
             <Button
@@ -95,6 +97,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:background="#00000000"
+                android:fontFamily="@font/baloo"
                 android:text="FORGET PASSWORD?"
                 android:textColor="@color/white" />
             
@@ -103,7 +106,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Sign in"
+            android:fontFamily="@font/baloo"
             android:textColor="#0E8DFD"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
@@ -113,6 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create account"
+            android:fontFamily="@font/baloo"
             android:background="#00000000"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
