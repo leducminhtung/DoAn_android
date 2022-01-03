@@ -10,25 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DoAn_android">
         <activity
-            android:name=".Change_Password"
+            android:name=".Activity.Change_Password"
+            android:exported="false" />
+        <activity android:name=".Activity.Profile_User"
+            android:exported="true"/>
+        <activity
+            android:name=".Activity.Index"
             android:exported="false" />
         <activity
-            android:name=".Profile_User"
+            android:name=".Activity.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".index"
+            android:name=".Activity.RegisterUser"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".Activity.Login"
             android:exported="false" />
         <activity
-            android:name=".RegisterUser"
-            android:exported="false" />
+            android:name=".Activity.Booking"
+            android:exported="false"/>
         <activity
-            android:name=".Login"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

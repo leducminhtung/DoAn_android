@@ -1,13 +1,14 @@
-package com.example.doan_android;
+package com.example.doan_android.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
+
+import com.example.doan_android.R;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -81,9 +82,10 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void GoToHomeidex(View view) {
-        Intent intent = new Intent(HomeActivity.this,index.class);
+    public void GoToIndex(View view) {
+        Intent intent = new Intent(HomeActivity.this, Index.class);
         startActivity(intent);
     }
+
 
 }

@@ -1,15 +1,16 @@
-package com.example.doan_android;
+package com.example.doan_android.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.doan_android.R;
 
 public class MainActivity extends AppCompatActivity {
 

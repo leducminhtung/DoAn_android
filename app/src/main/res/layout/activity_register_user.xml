@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:padding="10dp"
-    tools:context=".RegisterUser">
+    tools:context=".Activity.RegisterUser">
 
     <ImageView
         android:layout_width="100dp"

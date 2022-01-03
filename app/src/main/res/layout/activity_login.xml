@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#0E8DFD"
     android:padding="10dp"
-    tools:context=".Login">
+    tools:context=".Activity.Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:textSize="26dp"
+            android:onClick="GoToHome1"
             android:textColor="@color/white"
             android:fontFamily="@font/baloo"
             android:text="LOGIN"/>
@@ -99,6 +100,7 @@
                 android:background="#00000000"
                 android:fontFamily="@font/baloo"
                 android:text="FORGET PASSWORD?"
+
                 android:textColor="@color/white" />
             
         </RelativeLayout>
