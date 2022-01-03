@@ -21,6 +21,8 @@
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_splash_srceen.xml" value="0.13046448087431695" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_splashsrceen.xml" value="0.13046448087431695" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/fragment_home.xml" value="0.1567622950819672" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/item_history.xml" value="0.15789473684210525" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/listview_item_histories.xml" value="0.15789473684210525" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/test1.xml" value="0.1567622950819672" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/test2.xml" value="0.1567622950819672" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/menu/navigation_menu.xml" value="0.15789473684210525" />
@@ -28,30 +30,10 @@
         <entry key="..\:/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/DoAn_android/app/src/main/res/layout/activity_main.xml" value="0.19746376811594202" />
         <entry key="..\:/DoAn_android/app/src/main/res/layout/activity_register_user.xml" value="0.264" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/customborder.xml" value="0.24027777777777778" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.24027777777777778" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_account_circle_blu.xml" value="0.18796296296296297" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.24027777777777778" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.24027777777777778" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/rounded_corner.xml" value="0.18796296296296297" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/search_icon_background.xml" value="0.18796296296296297" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/trending_background.xml" value="0.18796296296296297" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/white_rectangle_background.xml" value="0.18796296296296297" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_booking.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_change_password.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_index.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_main.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_menu.xml" value="0.22592592592592592" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_profile_user.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_register_user.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/item_history.xml" value="0.4" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/listview_item_histories.xml" value="0.4" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/menu/navigation_menu.xml" value="0.4" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

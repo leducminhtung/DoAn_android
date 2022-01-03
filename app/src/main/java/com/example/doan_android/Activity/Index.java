@@ -43,6 +43,9 @@ public class Index extends AppCompatActivity {
                         case R.id.menuAccount:
                             selectedFragment = new Fragment_Account();
                             break;
+                        case R.id.menuHistory:
+                            selectedFragment = new Fragment_History();
+                            break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();

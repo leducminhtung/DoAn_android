@@ -38,7 +38,7 @@
             <AutoCompleteTextView
                 android:fontFamily="@font/baloo"
                 android:backgroundTint="@color/white"
-                android:id="@+id/autoCompleteTextView6"
+                android:id="@+id/txtNoiDi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -56,7 +56,7 @@
             >
 
             <AutoCompleteTextView
-                android:id="@+id/autoCompleteTextView7"
+                android:id="@+id/txtNoiDen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/baloo"
@@ -72,34 +72,45 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
+            android:orientation="vertical"
             >
 
+            <CheckBox
+                android:id="@+id/pa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:minHeight="48dp"
+                android:text="Round-trip"
+                android:layout_gravity="center"
+                />
+
             <AutoCompleteTextView
-                android:id="@+id/autoCompleteTextView8"
+                android:id="@+id/txtNgayDi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
                 android:text="NGAY DI" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="32dp"
-            >
-
-            <AutoCompleteTextView
-                android:id="@+id/autoCompleteTextView9"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/baloo"
-                android:text="NGAY VE" />
+
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtNgayVe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:text="NGAY VE"
+                    android:enabled="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -116,29 +127,14 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+
                 android:fontFamily="@font/baloo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="1.000.000d"
-            android:fontFamily="@font/baloo"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            >
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/baloo"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -155,9 +151,9 @@
             android:layout_marginRight="20dp"
             android:layout_weight="0.3"
             android:backgroundTint="#389FFA"
-            android:textColor="@color/white"
             android:fontFamily="@font/baloo"
-            android:text="OK" />
+            android:text="OK"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/button3"
@@ -165,12 +161,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:backgroundTint="@color/md_red_800"
-            android:textColor="@color/white"
-            android:fontFamily="@font/baloo"
             android:layout_weight="0.3"
+            android:backgroundTint="@color/md_red_800"
+            android:fontFamily="@font/baloo"
+            android:onClick="GoToHome2"
             android:text="Cancel"
-            android:onClick="GoToHome2"/>
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </LinearLayout>

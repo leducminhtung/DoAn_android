@@ -8,7 +8,7 @@
 
     />
 
-    <item android:id="@+id/menuFavorite"
+    <item android:id="@+id/menuHistory"
         android:icon="@drawable/ic_baseline_history_24"
         android:title="Favorite"/>
 
