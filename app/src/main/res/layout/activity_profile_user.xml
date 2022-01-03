@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Activity.Profile_User">
+    tools:context=".Activity.Index">
 
 
     <LinearLayout
@@ -69,7 +69,7 @@
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
-                        android:id="@+id/change_password"
+                        android:id="@+id/txtchangePassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"

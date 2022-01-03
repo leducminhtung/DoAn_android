@@ -56,4 +56,9 @@ public class Index extends AppCompatActivity {
         Intent intent = new Intent(Index.this, Booking.class);
         startActivity(intent);
     }
+
+    public void GoToChangePass(View view) {
+        Intent intent = new Intent(Index.this, Change_Password.class);
+        startActivity(intent);
+    }
 }

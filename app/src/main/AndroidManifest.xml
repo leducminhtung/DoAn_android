@@ -12,8 +12,6 @@
         <activity
             android:name=".Activity.Change_Password"
             android:exported="false" />
-        <activity android:name=".Activity.Profile_User"
-            android:exported="true"/>
         <activity
             android:name=".Activity.Index"
             android:exported="false" />
