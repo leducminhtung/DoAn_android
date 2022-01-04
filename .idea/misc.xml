@@ -39,9 +39,10 @@
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/rounded_corner.xml" value="0.18796296296296297" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/search_icon_background.xml" value="0.18796296296296297" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/shadow.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/trending_background.xml" value="0.18796296296296297" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/white_rectangle_background.xml" value="0.18796296296296297" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_booking.xml" value="0.1102077687443541" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_booking.xml" value="0.264" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_change_password.xml" value="0.1102077687443541" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.1102077687443541" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_index.xml" value="0.1102077687443541" />
@@ -49,8 +50,13 @@
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_menu.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_profile_user.xml" value="0.1102077687443541" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_register_user.xml" value="0.1102077687443541" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/choose_chair_mid.xml" value="0.1431159420289855" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/details_booking.xml" value="0.264" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/item_booking.xml" value="0.4" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/item_history.xml" value="0.4" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/listview_item_histories.xml" value="0.4" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/lisview_booking.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/shadow.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/menu/navigation_menu.xml" value="0.4" />
       </map>
     </option>
