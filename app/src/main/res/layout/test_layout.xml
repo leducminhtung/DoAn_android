@@ -7,7 +7,7 @@
 
     android:orientation="vertical"
     android:paddingBottom="10dp"
-    tools:context=".Activity.Booking">
+    tools:context=".Activity.Test">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,12 +79,10 @@
                 android:id="@+id/pa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/baloo"
                 android:layout_gravity="right"
+                android:fontFamily="@font/baloo"
                 android:minHeight="48dp"
-                android:text="Round-trip"
-
-                />
+                android:text="Round-trip" />
 
             <AutoCompleteTextView
                 android:id="@+id/txtNgayDi"
@@ -92,7 +90,12 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
-                android:text="NGAY DI" />
+                android:clickable="false"
+                android:text="NGAY DI"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+            </AutoCompleteTextView>
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"

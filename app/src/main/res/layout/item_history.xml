@@ -89,7 +89,6 @@
                 android:layout_marginRight="10dp"
                 android:gravity="right"
                 android:inputType="number"
-                android:minHeight="48dp"
                 android:text="TextView"
                 android:textColor="@color/yellow" />
 

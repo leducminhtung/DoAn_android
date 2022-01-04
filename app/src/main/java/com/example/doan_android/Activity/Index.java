@@ -46,6 +46,9 @@ public class Index extends AppCompatActivity {
                         case R.id.menuHistory:
                             selectedFragment = new Fragment_History();
                             break;
+                        case R.id.menuSetting:
+                            selectedFragment = new SettingsActivity.SettingsFragment();
+                            break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
@@ -62,6 +65,11 @@ public class Index extends AppCompatActivity {
 
     public void GoToChangePass(View view) {
         Intent intent = new Intent(Index.this, Change_Password.class);
+        startActivity(intent);
+    }
+
+    public void GoToTest(View view) {
+        Intent intent = new Intent(Index.this, Test.class);
         startActivity(intent);
     }
 }

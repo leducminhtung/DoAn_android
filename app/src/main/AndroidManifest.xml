@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DoAn_android">
         <activity
+            android:name=".Activity.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
             android:name=".Activity.Change_Password"
             android:exported="false" />
         <activity
@@ -26,7 +30,10 @@
             android:exported="false" />
         <activity
             android:name=".Activity.Booking"
-            android:exported="false"/>
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Test"
+            android:exported="false" />
         <activity
             android:name=".Activity.MainActivity"
             android:exported="true">
