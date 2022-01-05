@@ -33,31 +33,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
            >
 
-            <EditText
-                android:layout_marginTop="10dp"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@color/md_grey_200"
-                android:hint="Search ..."
-                android:imeOptions="actionSearch"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:paddingStart="15dp"
-                android:paddingEnd="15dp"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                tools:ignore="TouchTargetSizeCheck" />
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
 
-            <ImageView
-                android:layout_marginTop="10dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:background="@drawable/search_icon_background"
-                android:contentDescription="@string/app_name"
-                android:padding="6dp"
-                android:src="@drawable/ic_baseline_search_24"
-                app:tint="@color/md_light_blue_500" />
+                >
+
+            </SearchView>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

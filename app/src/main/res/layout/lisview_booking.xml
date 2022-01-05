@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:background="@color/md_grey_200"
+                android:background="@drawable/search_icon_background"
                 >
 
             </SearchView>
