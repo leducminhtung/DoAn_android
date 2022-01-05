@@ -10,14 +10,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:padding="20dp"
-            android:background="@drawable/header_background">
+            android:background="@drawable/header_background"
+            android:padding="20dp">
 
             <ImageView
                 android:id="@+id/profileUser_image"
@@ -50,16 +49,15 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="@color/md_light_blue_500"
-                app:cardElevation="10dp"
-                android:layout_margin="10dp">
+                app:cardElevation="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    >
+                    android:padding="5dp">
 
                     <ImageView
                         android:layout_width="48dp"
@@ -76,8 +74,8 @@
                         android:fontFamily="@font/baloo"
                         android:gravity="center"
                         android:includeFontPadding="false"
-                        android:onClick="GoToChangePass"
                         android:minHeight="48dp"
+                        android:onClick="GoToChangePass"
                         android:text="Change Password"
                         android:textSize="25sp" />
 
@@ -85,132 +83,137 @@
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:hint="Full Name">
+                android:orientation="vertical"
+                android:padding="20dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_account_circle_24"
-                    android:drawablePadding="10dp"
-                    android:text="VuduyLinh"
-                    tools:ignore="TouchTargetSizeCheck">
+                    android:layout_marginBottom="5dp"
+                    android:hint="Full Name">
 
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                        android:drawablePadding="10dp"
+                        android:text="VuduyLinh"
+                        tools:ignore="TouchTargetSizeCheck">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:hint="Email">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_email_24"
-                    android:drawablePadding="10dp"
-                    android:text="vudytlinh1345@gmail.com"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Email">
 
-                    tools:ignore="TouchTargetSizeCheck">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_email_24"
+                        android:drawablePadding="10dp"
+                        android:text="vudytlinh1345@gmail.com"
 
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
+                        tools:ignore="TouchTargetSizeCheck">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:hint="Phone number">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_phone_android_24"
-                    android:drawablePadding="10dp"
-                    android:inputType="number"
-                    android:text="012345678"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Phone number">
 
-                    tools:ignore="TouchTargetSizeCheck">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                        android:drawablePadding="10dp"
+                        android:inputType="number"
+                        android:text="012345678"
 
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
+                        tools:ignore="TouchTargetSizeCheck">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:hint="CCCD">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_people_24"
-                    android:drawablePadding="10dp"
-                    android:inputType="number"
-                    android:text="261455555"
+                    android:layout_marginBottom="5dp"
+                    android:hint="CCCD">
 
-                    tools:ignore="TouchTargetSizeCheck">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_people_24"
+                        android:drawablePadding="10dp"
+                        android:inputType="number"
+                        android:text="261455555"
 
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
+                        tools:ignore="TouchTargetSizeCheck">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:hint="Birthday">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
-                    android:drawablePadding="10dp"
-                    android:inputType="date"
-                    android:text="2000-13-06"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Birthday">
 
-                    tools:ignore="TouchTargetSizeCheck">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                        android:drawablePadding="10dp"
+                        android:inputType="date"
+                        android:text="2000-13-06"
 
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
+                        tools:ignore="TouchTargetSizeCheck">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:hint="Sex">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_person_search_24"
-                    android:drawablePadding="10dp"
-                    android:text="Male"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Sex">
 
-                    tools:ignore="TouchTargetSizeCheck">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_person_search_24"
+                        android:drawablePadding="10dp"
+                        android:text="Male"
 
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
+                        tools:ignore="TouchTargetSizeCheck">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/md_blue_A700"
-                android:fontFamily="@font/baloo"
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                android:text="Update"
-                android:textColor="@color/white" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/md_blue_A700"
+                    android:fontFamily="@font/baloo"
 
-        </LinearLayout>
+                    android:text="Update"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 
 </RelativeLayout>

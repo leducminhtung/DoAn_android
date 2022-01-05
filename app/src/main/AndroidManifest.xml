@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DoAn_android">
         <activity
+            android:name=".Activity.ListBooking"
+            android:exported="false" />
+        <activity
             android:name=".Activity.SettingsActivity"
             android:exported="false"
             android:label="@string/title_activity_settings" />

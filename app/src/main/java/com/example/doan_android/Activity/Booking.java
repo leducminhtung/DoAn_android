@@ -188,4 +188,9 @@ public class Booking extends AppCompatActivity implements NumberPicker.OnValueCh
         int sohientai = Adult.getValue();
         Adult.setValue(sohientai-1);
     }
+
+    public void GoToListBooking(View view) {
+        Intent intent = new Intent(Booking.this, ListBooking.class);
+        startActivity(intent);
+    }
 }
