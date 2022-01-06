@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
         android:background="@drawable/header_background"
         android:layout_marginBottom="5dp"
         >
@@ -19,14 +20,14 @@
         <ImageView
             android:layout_width="96dp"
             android:layout_height="80dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             android:scaleType="fitCenter"
             android:src="@drawable/icon_fly" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             android:backgroundTint="@color/md_white_1000"
             android:fontFamily="@font/baloo"
             android:onClick="GoToLogin"
@@ -36,7 +37,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             android:backgroundTint="@color/md_white_1000"
             android:fontFamily="@font/baloo"
             android:onClick="GoToRegister"
@@ -46,7 +47,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             android:backgroundTint="@color/md_white_1000"
             android:fontFamily="@font/baloo"
             android:onClick="GoToIndex"
