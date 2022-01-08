@@ -1,8 +1,9 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ChuyenBayModel
+public class ChuyenBayModel implements Serializable
 {
     private List<Data> data;
 
@@ -34,7 +35,7 @@ public class ChuyenBayModel
         return "ClassPojo [data = "+data+", status = "+status+"]";
     }
 
-    public class Data
+    public class Data implements Serializable
     {
         private String maCB;
 

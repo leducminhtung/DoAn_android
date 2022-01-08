@@ -31,8 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
+            android:hint="@string/select"
             >
 
             <AutoCompleteTextView
@@ -42,7 +43,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="NOI DI" />
+                android:inputType="none"
+
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,6 +56,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
+            android:hint="@string/select1"
             >
 
             <AutoCompleteTextView
@@ -61,7 +65,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/baloo"
                 android:layout_weight="1"
-                android:text="NOI DEN" />
+                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +96,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
-                android:text="NGAY DI" />
+                android:hint="@string/select2" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
@@ -107,7 +111,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="@font/baloo"
-                    android:text="NGAY VE"
+                    android:hint="@string/select3"
                     android:enabled="false"
                     />
 
@@ -318,7 +322,8 @@
             android:fontFamily="@font/baloo"
             android:text="OK"
             android:onClick="GoToListBooking"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            />
 
         <Button
             android:id="@+id/button3"

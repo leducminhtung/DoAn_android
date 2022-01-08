@@ -37,15 +37,18 @@
             >
 
 
-
-            <SearchView
+            <TextView
+                android:id="@+id/txtSLNguoi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/search_icon_background"
-                >
+                android:textSize="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/baloo"
+                android:paddingTop="20dp"
+                android:background="@drawable/search_icon_background">
 
-            </SearchView>
+            </TextView>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,7 @@
             android:src="@drawable/icon_fly" />
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -35,6 +36,7 @@
             tools:ignore="ExtraText" />
 
         <Button
+            android:id="@+id/btnRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -45,10 +47,12 @@
             tools:ignore="ExtraText" />
 
         <Button
+            android:id="@+id/btnTicket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:backgroundTint="@color/md_white_1000"
+            android:enabled="false"
             android:fontFamily="@font/baloo"
             android:onClick="GoToIndex"
             android:text="TICKET"

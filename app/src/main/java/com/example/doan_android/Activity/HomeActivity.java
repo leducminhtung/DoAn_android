@@ -5,19 +5,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.example.doan_android.R;
 
+import Model.TaiKhoanModel;
+
 public class HomeActivity extends AppCompatActivity {
 
     ViewFlipper v_flipper, v_flipper1;
+    private static final int REQUEST_CODE_EXAMPLE = 0x9345;
+    Button Login,Ticket,Register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        Login = findViewById(R.id.btnLogin);
+        Register = findViewById(R.id.btnRegister);
+        Ticket = findViewById(R.id.btnTicket);
+
 
         int images[] = {R.drawable.quangcao1, R.drawable.quangcao2, R.drawable.quangcao3,
                         R.drawable.quangcao4, R.drawable.quangcao5, R.drawable.quangcao6};
@@ -72,9 +83,23 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_EXAMPLE) {
+
+
+            TaiKhoanModel.Data TaiKhoan  = (TaiKhoanModel.Data) data.getSerializableExtra("traKhachDaNhap");
+            Login.setEnabled(false);
+            Register.setEnabled(false);
+            Ticket.setEnabled(true);
+            Toast.makeText(getBaseContext(),"Xin chào " +TaiKhoan.getUserName()+ " ! Bạn đã đăng nhập thành công !",Toast.LENGTH_SHORT).show();
+        }
+    }
+
     public void GoToLogin(View view) {
         Intent intent = new Intent(HomeActivity.this,Login.class);
-        startActivity(intent);
+        startActivityForResult(intent,REQUEST_CODE_EXAMPLE);
     }
 
     public void GoToRegister(View view) {

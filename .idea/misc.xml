@@ -9,11 +9,12 @@
         <entry key="..\:/APP/DoAn_android/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.16644951140065148" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/drawable/trending_background.xml" value="0.16644951140065148" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/drawable/white_rectangle_background.xml" value="0.16644951140065148" />
-        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_booking.xml" value="0.15789473684210525" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_booking.xml" value="0.176" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_change_password.xml" value="0.1413934426229508" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_index.xml" value="0.10276679841897234" />
-        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_input_customer.xml" value="0.1448087431693989" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.176" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_menu.xml" value="0.11953551912568305" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/activity_profile_user.xml" value="0.1413934426229508" />
@@ -23,11 +24,21 @@
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/choose_chair_left.xml" value="0.1" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/choose_chair_mid.xml" value="0.15471311475409835" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/choose_chair_right.xml" value="0.15471311475409835" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/details_booking.xml" value="0.1567622950819672" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/dropdown_item.xml" value="0.1" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/fragment_home.xml" value="0.1567622950819672" />
-        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/lisview_booking.xml" value="0.10109289617486339" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/infor_customer.xml" value="0.264" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/item_booking.xml" value="0.264" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/item_history.xml" value="0.1" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/item_infocustomer.xml" value="0.2" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/item_test.xml" value="0.2" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/listview_infocustomer.xml" value="0.15027322404371585" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/listview_item_histories.xml" value="0.1" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/lisview_booking.xml" value="0.2" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/settings_activity.xml" value="0.1" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/test1.xml" value="0.1567622950819672" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/test2.xml" value="0.1567622950819672" />
-        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/test_layout.xml" value="0.1" />
+        <entry key="..\:/APP/DoAn_android/app/src/main/res/layout/test_layout.xml" value="0.2" />
         <entry key="..\:/APP/DoAn_android/app/src/main/res/menu/navigation_menu.xml" value="0.15789473684210525" />
         <entry key="..\:/DoAn_android/app/src/main/res/drawable/rounded_corner.xml" value="0.25625" />
         <entry key="..\:/DoAn_android/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
@@ -45,7 +56,7 @@
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/drawable/white_rectangle_background.xml" value="0.18796296296296297" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_booking.xml" value="0.264" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_change_password.xml" value="0.1102077687443541" />
-        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_home.xml" value="0.1102077687443541" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_index.xml" value="0.1102077687443541" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_main.xml" value="0.1102077687443541" />
         <entry key="..\:/Users/84948/Desktop/DoAn_android/app/src/main/res/layout/activity_menu.xml" value="0.22592592592592592" />
@@ -64,10 +75,13 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>

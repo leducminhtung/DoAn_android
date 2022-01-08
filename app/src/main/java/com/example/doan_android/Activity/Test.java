@@ -7,12 +7,15 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.NumberPicker;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +28,11 @@ import java.util.Locale;
 
 public class Test extends AppCompatActivity implements NumberPicker.OnValueChangeListener{
 
+    String[] items = {"SGN", "HAN", "DAD", "ASH"};
+    AutoCompleteTextView autoCompleteTextView;
+
+    ArrayAdapter<String> adapterItems;
+
     public Button pls1, min1;
     NumberPicker Adult,Child,Baby;
 
@@ -35,6 +43,19 @@ public class Test extends AppCompatActivity implements NumberPicker.OnValueChang
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test_layout);
+
+        autoCompleteTextView = findViewById(R.id.txtNoiDi1);
+
+        adapterItems = new ArrayAdapter<String>(this, R.layout.dropdown_item, items);
+
+        autoCompleteTextView.setAdapter(adapterItems);
+        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+                Toast.makeText(getApplicationContext(),"Item: "+item, Toast.LENGTH_SHORT).show();
+            }
+        });
 
         //Date
         textView=(AutoCompleteTextView) findViewById(R.id.txtNgayDi);
@@ -133,4 +154,6 @@ public class Test extends AppCompatActivity implements NumberPicker.OnValueChang
         int sohientai = Adult.getValue();
         Adult.setValue(sohientai-1);
     }
+
+
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.InfoCustomerActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="List Customer"
+
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/lv_infocustommer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:padding="2dp">
+        <Button
+            android:text="CANCEL"
+            android:onClick="Cancel1"
+            android:fontFamily="@font/baloo"
+            android:textSize="20sp"
+            android:background="@color/md_red_500"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            />
+        <Button
+            android:text="PURCHASE"
+            android:fontFamily="@font/baloo"
+            android:textSize="20sp"
+            android:background="@color/md_blue_500"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

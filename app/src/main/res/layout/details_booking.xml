@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Activity.DetailsBookingActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,11 +40,11 @@
                 />
 
             <TextView
+                android:id="@+id/txtTenHang_layoutDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="VietNam airlines"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,11 +66,11 @@
                 />
 
             <TextView
+                android:id="@+id/txtTenCangDi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="DaLat"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,11 +92,11 @@
                 />
 
             <TextView
+                android:id="@+id/txtTenCangDen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="HCM city"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,13 +127,13 @@
 
 
             <TextView
+                android:id="@+id/txtNgayGioDi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="13-06-2022 9:00 AM"
                 android:fontFamily="@font/baloo"
-                android:textSize="18sp"
+                android:text="13-06-2022 9:00 AM"
 
-                />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -143,12 +145,12 @@
                 />
 
             <TextView
+                android:id="@+id/txtNgayGioDen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="15-06-2022 22:00 PM"
-                android:textSize="18sp"
                 android:fontFamily="@font/baloo"
-                />
+                android:text="15-06-2022 22:00 PM"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -173,7 +175,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -181,27 +183,37 @@
 
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Adult: "
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:layout_marginRight="48dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:textColor="@color/black"
-                android:textSize="20sp"
                 android:layout_marginRight="50dp"
                 />
+
+            <TextView
+                android:id="@+id/txtSL_NguoiLon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="125dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPriceNL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:text="$"
+                android:textColor="@color/yellow"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -209,27 +221,37 @@
 
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Children: "
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="23dp"
                 />
+
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/txtSL_TreEm"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="125dp"
                 android:text="0"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPriceCR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="50dp"
-                />
+                android:text="$"
+                android:textColor="@color/yellow"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
@@ -237,35 +259,47 @@
 
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Baby: "
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:layout_marginRight="50dp"
+                android:layout_marginRight="53dp"
                 />
+
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/txtSL_EmBe"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="125dp"
                 android:text="0"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPriceBB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="50dp"
-                />
+                android:text="$"
+                android:textColor="@color/yellow"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content"
+
             android:padding="10dp"
             android:layout_gravity="left">
 
 
             <TextView
-                android:layout_width="match_parent"
+
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Price:"
                 android:textColor="@color/black"
@@ -275,25 +309,42 @@
                 />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/txtSumPrice"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="300$"
                 android:textColor="@color/yellow"
-                android:textSize="20sp"
-                android:layout_marginRight="50dp"
-                />
+                android:textSize="20sp" />
         </LinearLayout>
 
 
 
     </LinearLayout>
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BACK"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/md_blue_A700"
-        android:textSize="20sp"
-        android:fontFamily="@font/baloo"/>
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/md_red_500"
+            android:textSize="20sp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/baloo"
+            android:onClick="GoToInfoCustomer"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/md_blue_A700"
+            android:textSize="20sp"
+            android:fontFamily="@font/baloo"
+            android:onClick="BackToList"/>
+    </LinearLayout>
+
 
 </LinearLayout>

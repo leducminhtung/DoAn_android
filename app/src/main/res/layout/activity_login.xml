@@ -14,21 +14,23 @@
         android:layout_marginTop="0dp"
         android:orientation="vertical"
         >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:textSize="26dp"
-            android:onClick="GoToHome1"
-            android:textColor="@color/white"
             android:fontFamily="@font/baloo"
-            android:text="LOGIN"/>
+            android:minHeight="48dp"
+            android:onClick="GoToHome1"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="26dp" />
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="90dp"
-           android:layout_gravity="center"
-            android:src="@drawable/icon_fly">
-        </ImageView>
+            android:layout_gravity="center"
+            android:src="@drawable/icon_fly"></ImageView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -46,12 +48,12 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUserName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:background="@drawable/rounded_corner"
                 android:inputType="text"
-                />
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -69,12 +71,12 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:background="@drawable/rounded_corner"
                 android:inputType="textPassword"
-                />
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
         <RelativeLayout
@@ -88,8 +90,9 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:buttonTint="@color/white"
-                android:text="Remember me"
                 android:fontFamily="@font/baloo"
+                android:minHeight="48dp"
+                android:text="Remember me"
                 android:textColor="@color/white" />
 
             <Button
@@ -113,6 +116,7 @@
             android:textColor="#0E8DFD"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
+            android:onClick="SignIn"
             />
 
         <Button

@@ -18,4 +18,9 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="information_customer">Information customer</string>
 
+    <string name="select">DEPARTURE</string>
+    <string name="select1">DESTINATION</string>
+    <string name="select2">START TIME</string>
+    <string name="select3">RETURN TIME</string>
+
 </resources>

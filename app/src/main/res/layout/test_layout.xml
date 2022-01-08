@@ -7,7 +7,7 @@
 
     android:orientation="vertical"
     android:paddingBottom="10dp"
-    tools:context=".Activity.Test">
+    tools:context=".Activity.Booking">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,18 +31,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
+            android:hint="@string/select"
             >
 
             <AutoCompleteTextView
                 android:fontFamily="@font/baloo"
                 android:backgroundTint="@color/white"
-                android:id="@+id/txtNoiDi"
+                android:id="@+id/txtNoiDi1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="NOI DI" />
+                android:inputType="none"
+                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,10 +81,12 @@
                 android:id="@+id/pa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
                 android:fontFamily="@font/baloo"
+                android:layout_gravity="right"
                 android:minHeight="48dp"
-                android:text="Round-trip" />
+                android:text="Round-trip"
+
+                />
 
             <AutoCompleteTextView
                 android:id="@+id/txtNgayDi"
@@ -90,12 +94,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
-                android:clickable="false"
-                android:text="NGAY DI"
-                android:cursorVisible="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false">
-            </AutoCompleteTextView>
+                android:text="NGAY DI" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
@@ -320,6 +319,7 @@
             android:backgroundTint="#389FFA"
             android:fontFamily="@font/baloo"
             android:text="OK"
+            android:onClick="GoToListBooking"
             android:textColor="@color/white" />
 
         <Button

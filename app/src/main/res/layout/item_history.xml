@@ -50,14 +50,14 @@
 
               <TextView
                   android:layout_marginRight="10dp"
-                  android:id="@+id/txtName"
+                  android:id="@+id/txtTenHang_layoutDetails"
                   android:fontFamily="@font/baloo"
                   android:textSize="20sp"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:text="TextView" />
               <TextView
-                  android:id="@+id/txtTime"
+                  android:id="@+id/txtGioDi"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:text="TextView" />
@@ -69,13 +69,13 @@
               android:orientation="horizontal">
               <TextView
                   android:layout_marginRight="50dp"
-                  android:id="@+id/txtDateStart"
+                  android:id="@+id/txtCangDi"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:text="TextView" />
 
               <TextView
-                  android:id="@+id/txtDateEnd"
+                  android:id="@+id/txtCangDen"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:text="TextView" />
@@ -83,7 +83,7 @@
 
 
             <TextView
-                android:id="@+id/txtDatePrice"
+                android:id="@+id/txtCustomer_NL_FullN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
