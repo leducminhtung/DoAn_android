@@ -49,20 +49,22 @@ public class Change_Password extends AppCompatActivity {
                 public void onResponse(Call<TaiKhoanModel> call, Response<TaiKhoanModel> response) {
                     List<TaiKhoanModel.Data> data = response.body().getData();
                     TaiKhoanInsertModel taikhoan = new TaiKhoanInsertModel();
+                    int SK_DOIMK = -1;
                     for (int i=0;i<data.size();i++){
-                        if (data.get(i).getPassword().equals(MatKhau_Old)){
+                        if (data.get(i).getPassword().equals(MatKhau_Old) && data.get(i).getUserName().equals(HomeActivity.KhachHang.getUserName())){
 
-                            taikhoan.setMaTK(Login.TaiKhoan.getMaTK());
-                            taikhoan.setUserName(Login.TaiKhoan.getUserName());
+
+
                             taikhoan.setPassword(txtchange_newP.getText().toString());
-
+                            SK_DOIMK =1;
                             break;
                         }
-                        else {
-                            Toast.makeText(getBaseContext(), "Sai thông tin cần nhập !", Toast.LENGTH_SHORT).show();
 
-                        }
                     }
+                    if (SK_DOIMK != 1) return;
+                    taikhoan.setUserName(HomeActivity.KhachHang.getUserName());
+                    taikhoan.setMaTK(Index.TaiKhoan.getMaTK());
+
                     Methods methodsDoiPass = getRetrofit().create(Methods.class);
                     Call<CallbackResultModel> callDoiMK = methodsDoiPass.editTaiKhoan(taikhoan);
                     callDoiMK.enqueue(new Callback<CallbackResultModel>() {

@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     ViewFlipper v_flipper, v_flipper1;
     private static final int REQUEST_CODE_EXAMPLE = 0x9345;
     Button Login,Ticket,Register;
-    TaiKhoanModel.Data TaiKhoan;
+    public static TaiKhoanModel.Data TaiKhoan;
     public static KhachHangModel.Data KhachHang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,8 +134,9 @@ public class HomeActivity extends AppCompatActivity {
                     if (TaiKhoan.getUserName().equals(dataKH.get(j).getUserName())){
                         KhachHang = dataKH.get(j);
                         Intent intent = new Intent(HomeActivity.this, Index.class);
-
+                        intent.putExtra("taikhoan",TaiKhoan);
                         startActivity(intent);
+                        break;
                     }
 
                 }

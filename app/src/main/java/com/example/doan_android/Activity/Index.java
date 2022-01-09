@@ -37,12 +37,13 @@ public class Index extends AppCompatActivity {
     ListView lv_history;
     TextView txtCustomUserName,txtIndex_UserName;
     TextInputEditText txtCustomerFullName,txtCustomerEmail,txtCustomerPhone,txtCustomerCCCD,txtCustomerBD,txtCustomerGioiTinh,txtCustomerFirstName;
-
+    public static TaiKhoanModel.Data TaiKhoan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        TaiKhoan  = (TaiKhoanModel.Data) getIntent().getSerializableExtra("taikhoan");
 
 
         if (savedInstanceState == null) {
@@ -171,5 +172,10 @@ public class Index extends AppCompatActivity {
                 Toast.makeText(getBaseContext(),"Không thể lưu thông tin !",Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void RETURNHOME(View view) {
+        Intent intent = new Intent(Index.this, HomeActivity.class);
+        startActivity(intent);
     }
 }

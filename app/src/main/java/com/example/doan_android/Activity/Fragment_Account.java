@@ -33,8 +33,8 @@ public class Fragment_Account extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View inf =inflater.inflate(R.layout.activity_profile_user, container, false);
         GetViewId(inf);
-        if (Login.TaiKhoan.getUserName() != null || HomeActivity.KhachHang.getUserName() != null){
-            Login.TaiKhoan.setUserName("");
+        if (HomeActivity.TaiKhoan.getUserName() != null || HomeActivity.KhachHang.getUserName() != null){
+            HomeActivity.TaiKhoan.setUserName("");
 
         }
         SetData();

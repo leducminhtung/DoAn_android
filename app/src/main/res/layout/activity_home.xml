@@ -55,7 +55,7 @@
             android:enabled="false"
             android:fontFamily="@font/baloo"
             android:onClick="GoToIndex"
-            android:text="TICKET"
+            android:text="SERVICE"
             tools:ignore="ExtraText" />
     </LinearLayout>
 
