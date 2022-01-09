@@ -1,5 +1,13 @@
 package Model;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
+import com.example.doan_android.Activity.Login;
+
+import java.time.LocalDateTime;
+
 public class HoaDonInsertModel
 {
     private String SL_EmBe;
@@ -86,6 +94,16 @@ public class HoaDonInsertModel
         this.TongTien = TongTien;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public HoaDonInsertModel(){
+        MaHD = "00000000-0000-0000-0000-000000000000";
+        MaKhach = Login.TaiKhoan.getMaTK();
+        SL_EmBe = "0";
+        SL_NguoiLon = "0";
+        SL_TreEm = "0";
+        TongTien = "0";
+        NgayLap = LocalDateTime.now().toString();
+    }
     @Override
     public String toString()
     {

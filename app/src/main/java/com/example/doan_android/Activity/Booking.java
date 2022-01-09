@@ -52,6 +52,7 @@ public class Booking extends AppCompatActivity implements NumberPicker.OnValueCh
 
 
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -274,46 +275,57 @@ public class Booking extends AppCompatActivity implements NumberPicker.OnValueCh
 
     public void GoToListBooking(View view) {
 
+        int SL_NguoiLon = Adult.getValue();
+        int SL_TreEm = Child.getValue();
+        int SL_EmBe = Baby.getValue();
+        if (SL_EmBe + SL_NguoiLon + SL_TreEm == 0){
+            Toast.makeText(getBaseContext(),"Amount of customer must greater than 0 !",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (SL_EmBe != 0 && SL_NguoiLon == 0){
+            Toast.makeText(getBaseContext(),"Baby must have go with their Tutor !",Toast.LENGTH_SHORT).show();
+
+        }
+        else {
+            Methods methods = getRetrofit().create(Methods.class);
+            Call<ChuyenBayModel> call = methods.getChuyenBay();
+            call.enqueue(new Callback<ChuyenBayModel>() {
+                @Override
+                public void onResponse(Call<ChuyenBayModel> call, Response<ChuyenBayModel> response) {
+                    List<ChuyenBayModel.Data> data = response.body().getData();
+                    ArrayList<ChuyenBayModel.Data> dscb_Found = new ArrayList<>();
+                    String noiden = NoiDen.getText().toString();
+                    String noidi = NoiDi.getText().toString();
+                    String ngaydi = NgayDi.getText().toString();
+                    String ngayve = NgayVe.getText().toString().trim();
 
 
-        Methods methods = getRetrofit().create(Methods.class);
-        Call<ChuyenBayModel> call = methods.getChuyenBay();
-        call.enqueue(new Callback<ChuyenBayModel>() {
-            @Override
-            public void onResponse(Call<ChuyenBayModel> call, Response<ChuyenBayModel> response) {
-                List<ChuyenBayModel.Data> data = response.body().getData();
-                ArrayList<ChuyenBayModel.Data> dscb_Found = new ArrayList<>();
-                String noiden = NoiDen.getText().toString();
-                String noidi = NoiDi.getText().toString();
-                String ngaydi = NgayDi.getText().toString();
-                String ngayve = NgayVe.getText().toString().trim();
-                int SL_NguoiLon = Adult.getValue();
-                int SL_TreEm = Child.getValue();
-                int SL_EmBe = Baby.getValue();
 
 
-
-                for (int i=0;i<data.size();i++){
-                    if (noiden.equals(data.get(i).getTencangden()) && noidi.equals(data.get(i).getTencangdi())
-                    && ngaydi.equals(data.get(i).getNgayDi().trim())){
-                        dscb_Found.add(data.get(i));
+                    for (int i=0;i<data.size();i++){
+                        if (noiden.equals(data.get(i).getTencangden()) && noidi.equals(data.get(i).getTencangdi())
+                                && ngaydi.equals(data.get(i).getNgayDi().trim())){
+                            dscb_Found.add(data.get(i));
+                        }
                     }
+
+                    Intent intent = new Intent(Booking.this, ListBooking.class);
+                    intent.putExtra("ListCB", dscb_Found);
+                    intent.putExtra("SL_NguoiLon", SL_NguoiLon);
+                    intent.putExtra("SL_TreEm", SL_TreEm);
+                    intent.putExtra("SL_EmBe", SL_EmBe);
+
+                    startActivity(intent);
                 }
 
-                Intent intent = new Intent(Booking.this, ListBooking.class);
-                intent.putExtra("ListCB", dscb_Found);
-                intent.putExtra("SL_NguoiLon", SL_NguoiLon);
-                intent.putExtra("SL_TreEm", SL_TreEm);
-                intent.putExtra("SL_EmBe", SL_EmBe);
+                @Override
+                public void onFailure(Call<ChuyenBayModel> call, Throwable t) {
 
-                startActivity(intent);
-            }
+                }
+            });
+        }
 
-            @Override
-            public void onFailure(Call<ChuyenBayModel> call, Throwable t) {
-
-            }
-        });
 
     }
 }

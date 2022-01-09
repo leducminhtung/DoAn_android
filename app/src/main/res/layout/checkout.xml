@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Activity.CheckOutActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +44,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="aircraft class"
+                android:text="Aircraft Class"
                 android:textColor="@color/black"
                 android:fontFamily="@font/baloo"
                 android:layout_marginRight="50dp"
@@ -50,12 +52,33 @@
 
             <TextView
 
+                android:id="@+id/txtCheck_TenHang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="VietNam airlines"
-                 />
+                android:text="VietNam airlines" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
 
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Airpane Name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/baloo"
+                android:layout_marginRight="47dp"
+                />
+
+            <TextView
+                android:id="@+id/txtCheck_TenMayBay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VietNam airlines" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -77,10 +100,10 @@
 
             <TextView
 
+                android:id="@+id/txtCheck_TenCangDi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="HCM city"
-                />
+                android:text="HCM city" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -92,10 +115,10 @@
 
             <TextView
 
+                android:id="@+id/txtCheck_TenCangDen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DaLat"
-                />
+                android:text="DaLat" />
         </LinearLayout>
 
         <LinearLayout
@@ -114,13 +137,14 @@
                 android:fontFamily="@font/baloo"
                 android:layout_marginRight="50dp"
                 />
+
             <TextView
+                android:id="@+id/txtCheck_NgayGioDi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo"
-                android:text="13-06-2022 9:00 AM"
 
-                />
+                android:text="13-06-2022 9:00 AM" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -131,11 +155,11 @@
                 />
 
             <TextView
+                android:id="@+id/txtCheck_NgayGioDen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo"
-                android:text="15-06-2022 22:00 PM"
-                />
+                android:text="15-06-2022 22:00 PM" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -157,131 +181,147 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnrCheck_NguoiLon"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content"
-            android:layout_gravity="left">
+            android:layout_gravity="left"
+            android:orientation="horizontal">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
                 android:text="Adult: "
-                android:textColor="@color/black"
-                android:layout_marginRight="5dp"
-                />
+                android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/txtCheck_SLNguoiLon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="35dp"
                 android:text="0"
-                android:textColor="@color/black"
-                />
+                android:textColor="@color/black" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="2dp"
-                android:text="Gia:" />
+                android:text="PRICE:" />
+
             <TextView
+                android:id="@+id/txtCheck_GiaNL"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
-                android:textColor="@color/yellow" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="2dp"
-                android:text="Gia thue:" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
+                android:layout_marginRight="10dp"
+                android:text="5000000"
                 android:textColor="@color/yellow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="2dp"
-                android:text="Gia DV:" />
+                android:text="TAX:" />
+
+            <TextView
+                android:id="@+id/txtCheck_GiaThueNL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="500000"
+                android:textColor="@color/yellow" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:text="SVC:" />
+
+            <TextView
+                android:id="@+id/txtCheck_GiaDVNL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginRight="20dp"
-                android:text="$"
+                android:text="100000"
                 android:textColor="@color/yellow" />
 
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnrCheck_TreEm"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content"
-            android:layout_gravity="left">
+            android:layout_gravity="left"
+            android:orientation="horizontal">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Children: "
-                android:textColor="@color/black"
                 android:layout_marginRight="5dp"
-                />
+                android:text="Children: "
+                android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/txtCheck_SLTreEm"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="13dp"
                 android:text="0"
-                android:textColor="@color/black"
-                />
+                android:textColor="@color/black" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="2dp"
-                android:text="Gia:" />
+                android:text="PRICE:" />
+
             <TextView
+                android:id="@+id/txtCheck_GiaTE"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
-                android:textColor="@color/yellow" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="2dp"
-                android:text="Gia thue:" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
+                android:layout_marginRight="10dp"
+                android:text="5000000"
                 android:textColor="@color/yellow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="2dp"
-                android:text="Gia DV:" />
+                android:text="TAX:" />
+
+            <TextView
+                android:id="@+id/txtCheck_GiaThueTE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="500000"
+                android:textColor="@color/yellow" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
-                android:textColor="@color/yellow" />
+                android:layout_marginRight="2dp"
+                android:text="SVC:" />
 
+            <TextView
+                android:id="@+id/txtCheck_GiaDVTE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:text="100000"
+                android:textColor="@color/yellow" />
 
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnrCheck_EmBe"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content"
-            android:layout_gravity="left">
+            android:layout_gravity="left"
+            android:orientation="horizontal">
 
 
             <TextView
@@ -292,47 +332,54 @@
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/txtCheck_SLEmBe"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="33dp"
                 android:text="0"
-                android:textColor="@color/black"
-                />
+                android:textColor="@color/black" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="2dp"
-                android:text="Gia:" />
+                android:text="PRICE:" />
+
             <TextView
+                android:id="@+id/txtCheck_GiaEB"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
-                android:textColor="@color/yellow" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="2dp"
-                android:text="Gia thue:" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
+                android:layout_marginRight="10dp"
+                android:text="5000000"
                 android:textColor="@color/yellow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="2dp"
-                android:text="Gia DV:" />
+                android:text="TAX:" />
+
+            <TextView
+                android:id="@+id/txtCheck_GiaThueEB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="500000"
+                android:textColor="@color/yellow" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
-                android:text="$"
-                android:textColor="@color/yellow" />
+                android:layout_marginRight="2dp"
+                android:text="SVC:" />
 
+            <TextView
+                android:id="@+id/txtCheck_GiaDVEB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:text="100000"
+                android:textColor="@color/yellow" />
 
 
         </LinearLayout>
@@ -358,7 +405,7 @@
                 />
 
             <TextView
-                android:id="@+id/txtSumPrice"
+                android:id="@+id/txtCheck_SumPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="300$"
@@ -373,34 +420,42 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:orientation="horizontal"
-        android:gravity="center">
-      <ListView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"/>
+        android:gravity="center"
+        tools:context=".Activity.CheckOutActivity">
+
+        <ListView
+            android:id="@+id/lvCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
+
         <Button
+            android:id="@+id/btnThanhToan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="@color/md_red_500"
+            android:fontFamily="@font/baloo"
+            android:onClick="ThanhToan"
             android:text="OK"
             android:textColor="@color/white"
-            android:backgroundTint="@color/md_red_500"
-            android:textSize="20sp"
-            android:layout_marginRight="50dp"
-            android:fontFamily="@font/baloo" />
+            android:textSize="20sp" />
+
         <Button
+            android:id="@+id/btnCancel"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_blue_A700"
+            android:fontFamily="@font/baloo"
+            android:onClick="Back"
             android:text="Cacel"
             android:textColor="@color/white"
-            android:backgroundTint="@color/md_blue_A700"
-            android:textSize="20sp"
-            android:fontFamily="@font/baloo"
-            />
+            android:textSize="20sp" />
     </LinearLayout>
 
 

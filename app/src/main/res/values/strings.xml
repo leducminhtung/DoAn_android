@@ -23,4 +23,6 @@
     <string name="select2">START TIME</string>
     <string name="select3">RETURN TIME</string>
 
+    <string name="mapping_through_momo">"Bắt đầu liên kết"</string>
+
 </resources>

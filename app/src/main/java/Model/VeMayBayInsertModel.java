@@ -1,5 +1,4 @@
 package Model;
-
 public class VeMayBayInsertModel
 {
     private String LoaiVe;
@@ -11,8 +10,6 @@ public class VeMayBayInsertModel
     private String Id;
 
     private String TongTien;
-
-    private String MaTK;
 
     public String getLoaiVe ()
     {
@@ -64,19 +61,9 @@ public class VeMayBayInsertModel
         this.TongTien = TongTien;
     }
 
-    public String getMaTK ()
-    {
-        return MaTK;
-    }
-
-    public void setMaTK (String MaTK)
-    {
-        this.MaTK = MaTK;
-    }
-
     @Override
     public String toString()
     {
-        return "ClassPojo [LoaiVe = "+LoaiVe+", NgayLap = "+NgayLap+", MaHD = "+MaHD+", Id = "+Id+", TongTien = "+TongTien+", MaTK = "+MaTK+"]";
+        return "ClassPojo [LoaiVe = "+LoaiVe+", NgayLap = "+NgayLap+", MaHD = "+MaHD+", Id = "+Id+", TongTien = "+TongTien+"]";
     }
 }

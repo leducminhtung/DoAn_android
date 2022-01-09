@@ -46,19 +46,22 @@ public class KhachHangModel implements Serializable
 
         private String ten;
 
+        private String userName;
+
         private String email;
 
         private String cccd;
 
         public Data(){
-            sdt = "";
-            ngaySinh = "00/00/00";
+            sdt = "01";
+            ngaySinh = "2000/01/01";
             maKhach = "00000000-0000-0000-0000-000000000000";
-            hoTen ="";
-            gioiTinh = "";
+            hoTen ="sa";
+            gioiTinh = "Male";
             ten = "USER";
-            email ="";
-            cccd ="";
+            email ="sa";
+            cccd ="sa";
+            userName = "";
         }
 
         public String getSdt ()
@@ -121,6 +124,16 @@ public class KhachHangModel implements Serializable
             this.ten = ten;
         }
 
+        public String getUserName ()
+        {
+            return userName;
+        }
+
+        public void setUserName (String userName)
+        {
+            this.userName = userName;
+        }
+
         public String getEmail ()
         {
             return email;
@@ -144,7 +157,7 @@ public class KhachHangModel implements Serializable
         @Override
         public String toString()
         {
-            return "ClassPojo [sdt = "+sdt+", ngaySinh = "+ngaySinh+", maKhach = "+maKhach+", hoTen = "+hoTen+", gioiTinh = "+gioiTinh+", ten = "+ten+", email = "+email+", cccd = "+cccd+"]";
+            return "ClassPojo [sdt = "+sdt+", ngaySinh = "+ngaySinh+", maKhach = "+maKhach+", hoTen = "+hoTen+", gioiTinh = "+gioiTinh+", ten = "+ten+", userName = "+userName+", email = "+email+", cccd = "+cccd+"]";
         }
     }
 

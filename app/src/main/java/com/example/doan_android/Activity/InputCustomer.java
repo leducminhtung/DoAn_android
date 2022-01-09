@@ -53,6 +53,7 @@ public class InputCustomer extends AppCompatActivity {
         txtCustomer_NL_Phone.setText(khachHang_current.getSdt());
         txtCustomer_NL_GT.setText(khachHang_current.getGioiTinh());
         txtCustomer_NL_SN.setText(khachHang_current.getNgaySinh());
+
     }
 
 

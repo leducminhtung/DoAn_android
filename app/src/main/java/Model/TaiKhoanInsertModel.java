@@ -1,6 +1,8 @@
 package Model;
 
-public class TaiKhoanInsertModel
+import java.io.Serializable;
+
+public class TaiKhoanInsertModel implements Serializable
 {
     private String UserName;
 

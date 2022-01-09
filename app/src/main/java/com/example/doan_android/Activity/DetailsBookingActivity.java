@@ -3,6 +3,7 @@ package com.example.doan_android.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ public class DetailsBookingActivity extends AppCompatActivity {
 
     ChuyenBayModel.Data chuyenbaydachon;
     TextView txtTenHang,txtTenCangDi,txtTenCangDen,txtNgayGioDi,txtNgayGioDen,txtSL_NguoiLon,txtSL_TreEm,txtSL_EmBe,txtPriceNL,txtPriceCR,txtPriceBB,txtSumPrice;
+    LinearLayout lnr_Detais_GiaNL,lnr_Detais_GiaTE,lnr_Detais_GiaEB;
     int SL_NguoiLon = 0;
     int SL_TreEm = 0;
     int SL_EmBe = 0;
@@ -26,6 +28,8 @@ public class DetailsBookingActivity extends AppCompatActivity {
         chuyenbaydachon = (ChuyenBayModel.Data) getIntent().getSerializableExtra("ChuyenBayDaChon");
 
         GetIdView();
+
+
         GetDataItem();
     }
 
@@ -43,7 +47,10 @@ public class DetailsBookingActivity extends AppCompatActivity {
         txtPriceNL = findViewById(R.id.txtPriceNL);
         txtPriceCR = findViewById(R.id.txtPriceCR);
         txtPriceBB = findViewById(R.id.txtPriceBB);
-        txtSumPrice = findViewById(R.id.txtSumPrice);
+        txtSumPrice = findViewById(R.id.txtCheck_SumPrice);
+        lnr_Detais_GiaNL = findViewById(R.id.lnr_Detais_GiaNL);
+        lnr_Detais_GiaTE = findViewById(R.id.lnr_Detais_GiaTE);
+        lnr_Detais_GiaEB = findViewById(R.id.lnr_Detais_GiaEB);
 
     }
 
@@ -53,6 +60,10 @@ public class DetailsBookingActivity extends AppCompatActivity {
         SL_NguoiLon = mIntent.getIntExtra("SL_NguoiLon", 0);
         SL_TreEm = mIntent.getIntExtra("SL_TreEm", 0);
         SL_EmBe = mIntent.getIntExtra("SL_EmBe", 0);
+
+        if (SL_NguoiLon == 0) lnr_Detais_GiaNL.setVisibility(View.GONE);
+        if (SL_TreEm == 0) lnr_Detais_GiaTE.setVisibility(View.GONE);
+        if (SL_EmBe == 0) lnr_Detais_GiaEB.setVisibility(View.GONE);
 
         txtTenHang.setText(chuyenbaydachon.getTenhang());
         txtTenCangDi.setText(chuyenbaydachon.getTencangdi());
@@ -72,13 +83,11 @@ public class DetailsBookingActivity extends AppCompatActivity {
         double GiaTE = Double.parseDouble(txtPriceCR.getText().toString());
         double GiaEB = Double.parseDouble(txtPriceBB.getText().toString());
 
-        int SL_NL = Integer.valueOf(txtSL_NguoiLon.getText().toString());
-        int SL_TE = Integer.valueOf(txtSL_TreEm.getText().toString());
-        int SL_EB = Integer.valueOf(txtSL_NguoiLon.getText().toString());
 
-        double tong = GiaNL * SL_NL + GiaTE * SL_TE + GiaEB * SL_EB;
 
-        txtSumPrice.setText(Double.toString(tong));
+        double tong = GiaNL * SL_NguoiLon + GiaTE * SL_TreEm + GiaEB * SL_EmBe;
+
+        txtSumPrice.setText(Double.toString(tong).replace(".0","") + "đ");
     }
 
     @Override

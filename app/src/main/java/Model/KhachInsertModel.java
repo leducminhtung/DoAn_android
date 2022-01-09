@@ -18,6 +18,8 @@ public class KhachInsertModel
 
     private String CCCD;
 
+    private String UserName;
+
     public String getGioiTinh ()
     {
         return GioiTinh;
@@ -97,6 +99,18 @@ public class KhachInsertModel
     {
         this.CCCD = CCCD;
     }
+
+    public String getUserName ()
+    {
+        return UserName;
+    }
+
+    public void setUserName (String UserName)
+    {
+        this.UserName = UserName;
+    }
+
+
 
     @Override
     public String toString()

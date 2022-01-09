@@ -72,7 +72,8 @@ public class ListBooking extends AppCompatActivity {
         SL_NguoiLon = mIntent.getIntExtra("SL_NguoiLon",0);
         SL_TreEm = mIntent.getIntExtra("SL_TreEm",0);
         SL_EmBe = mIntent.getIntExtra("SL_EmBe",0);
-        String SoLuong = SL_NguoiLon + " Người lớn, " + SL_TreEm + " Trẻ em, " + SL_EmBe + " Em bé ";
+
+        String SoLuong = SL_NguoiLon + " Adults, " + SL_TreEm + " Children, " + SL_EmBe + " Babies ";
         txtSL.setText(SoLuong);
 
         if (ListCB == null) Toast.makeText(getApplicationContext(), "Không tìm thấy chuyến bay nào !", Toast.LENGTH_LONG).show();

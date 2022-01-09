@@ -1,5 +1,7 @@
 package com.example.doan_android.Activity;
 
+import static Model.RetrofitClient.getRetrofit;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,21 +15,39 @@ import android.widget.ViewFlipper;
 
 import com.example.doan_android.R;
 
+import java.util.List;
+
+import InterfaceReponsitory.Methods;
+import Model.KhachHangModel;
 import Model.TaiKhoanModel;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class HomeActivity extends AppCompatActivity {
 
     ViewFlipper v_flipper, v_flipper1;
     private static final int REQUEST_CODE_EXAMPLE = 0x9345;
     Button Login,Ticket,Register;
-
+    TaiKhoanModel.Data TaiKhoan;
+    public static KhachHangModel.Data KhachHang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         Login = findViewById(R.id.btnLogin);
         Register = findViewById(R.id.btnRegister);
         Ticket = findViewById(R.id.btnTicket);
+
+        TaiKhoan  = (TaiKhoanModel.Data) getIntent().getSerializableExtra("traKhachDaNhap");
+        if (TaiKhoan != null) {
+            Login.setEnabled(false);
+            Register.setEnabled(false);
+            Ticket.setEnabled(true);
+            Toast.makeText(getBaseContext(),"Xin chào " +TaiKhoan.getUserName()+ " ! Bạn đã đăng nhập thành công !",Toast.LENGTH_SHORT).show();
+
+        }
 
 
         int images[] = {R.drawable.quangcao1, R.drawable.quangcao2, R.drawable.quangcao3,
@@ -46,6 +66,11 @@ public class HomeActivity extends AppCompatActivity {
         for(int image: images1){
             flipperImages1(image);
         }
+
+    }
+
+    public void LayKhachHang(){
+
 
     }
 
@@ -83,19 +108,6 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_EXAMPLE) {
-
-
-            TaiKhoanModel.Data TaiKhoan  = (TaiKhoanModel.Data) data.getSerializableExtra("traKhachDaNhap");
-            Login.setEnabled(false);
-            Register.setEnabled(false);
-            Ticket.setEnabled(true);
-            Toast.makeText(getBaseContext(),"Xin chào " +TaiKhoan.getUserName()+ " ! Bạn đã đăng nhập thành công !",Toast.LENGTH_SHORT).show();
-        }
-    }
 
     public void GoToLogin(View view) {
         Intent intent = new Intent(HomeActivity.this,Login.class);
@@ -108,8 +120,35 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void GoToIndex(View view) {
-        Intent intent = new Intent(HomeActivity.this, Index.class);
-        startActivity(intent);
+
+        Methods methods = getRetrofit().create(Methods.class);
+        Call<KhachHangModel> callKhachHang = methods.getKhachHang();
+
+        callKhachHang.enqueue(new Callback<KhachHangModel>() {
+            @Override
+            public void onResponse(Call<KhachHangModel> call, Response<KhachHangModel> response) {
+                List<KhachHangModel.Data> dataKH = response.body().getData();
+                Toast.makeText(getBaseContext(),"Đã lấy thông tin cá nhân !",Toast.LENGTH_SHORT).show();
+
+                for (int j=0;j<dataKH.size();j++){
+                    if (TaiKhoan.getUserName().equals(dataKH.get(j).getUserName())){
+                        KhachHang = dataKH.get(j);
+                        Intent intent = new Intent(HomeActivity.this, Index.class);
+
+                        startActivity(intent);
+                    }
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<KhachHangModel> call, Throwable t) {
+                Toast.makeText(getBaseContext(),"Không có dữ liệu khách hàng !",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
     }
 
 

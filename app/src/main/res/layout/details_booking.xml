@@ -175,6 +175,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnr_Detais_GiaNL"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content"
@@ -213,6 +214,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnr_Detais_GiaTE"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content"
@@ -251,6 +253,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnr_Detais_GiaEB"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content"
@@ -309,7 +312,7 @@
                 />
 
             <TextView
-                android:id="@+id/txtSumPrice"
+                android:id="@+id/txtCheck_SumPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="300$"

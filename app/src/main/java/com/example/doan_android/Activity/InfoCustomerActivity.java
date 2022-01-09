@@ -29,12 +29,13 @@ public class InfoCustomerActivity extends AppCompatActivity {
     ChuyenBayModel.Data chuyenbaydachon;
     ListView lv_info;
     KhachHangAdapter khachHangAdapter;
-
+    ArrayList <KhachHangModel.Data> dsKH = new ArrayList<>();
     int SL_NguoiLon = 0;
     int SL_TreEm = 0;
     int SL_EmBe = 0;
     private static final int REQUEST_CODE_EXAMPLE = 0x9345;
     int selected_position = -1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,12 +121,21 @@ public class InfoCustomerActivity extends AppCompatActivity {
 
     }
 
-    public void GoToChooseChair(View view) {
-
-    }
-
-
     public void Cancel1(View view) {
         finish();
+    }
+
+    public void GoToCheckout(View view) {
+        for (int i=0;i<khachHangAdapter.getCount();i++){
+            dsKH.add(khachHangAdapter.getItem(i));
+        }
+
+        Intent intent = new Intent(InfoCustomerActivity.this, CheckOutActivity.class);
+        intent.putExtra("SL_NguoiLon",SL_NguoiLon);
+        intent.putExtra("SL_TreEm",SL_TreEm);
+        intent.putExtra("SL_EmBe",SL_EmBe);
+        intent.putExtra("dsKH",dsKH);
+        intent.putExtra("chuyenbaydachon",chuyenbaydachon);
+        startActivity(intent);
     }
 }

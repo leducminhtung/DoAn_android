@@ -1,6 +1,14 @@
 package Model;
 
+import android.os.Build;
+import android.util.Log;
+
+import androidx.annotation.RequiresApi;
+
+import com.example.doan_android.Activity.Login;
+
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class HoaDonModel implements Serializable
@@ -44,7 +52,6 @@ public class HoaDonModel implements Serializable
         private String sL_TreEm;
 
         private String maKhach;
-
 
 
         public String getMaHD ()
@@ -116,6 +123,9 @@ public class HoaDonModel implements Serializable
         {
             this.maKhach = maKhach;
         }
+
+
+
 
 
         @Override
