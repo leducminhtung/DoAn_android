@@ -42,7 +42,7 @@ public class CheckOutActivity extends AppCompatActivity {
     int SL_TreEm = 0;
     int SL_EmBe = 0;
     int Event_NhapHD = 0;
-    // update 2
+    // update 3
     ChuyenBayModel.Data chuyenbaydachon;
     KhachHangAdapter_Checkout khachHangAdapter;
     ArrayList<KhachHangModel.Data> dsKH = new ArrayList<>();
